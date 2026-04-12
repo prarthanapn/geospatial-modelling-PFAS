@@ -7,38 +7,84 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+.mypy_cache/
+.pytest_cache/
+.tox/
 
 # Virtual environment
 .venv/
 venv/
 env/
-prd.md
-# Jupyter (legacy — do not add new notebooks)
-.ipynb_checkpoints/
+ENV/
 
-# Data — large files
-data/raw/*.csv
-data/interim/*.parquet
-data/features/*.parquet
-data/rasters/*.tif
-data/kdtrees/*.pkl
-data/kdtrees/*.npy
+# Environment variables
+.env
+.flaskenv
+
+# Data
+dataset/
+data/
 
 # Models
-models/*.pkl
-models/*.json
+models/
+*.pkl
+*.joblib
 
 # Outputs
-outputs/figures/
-outputs/predictions/
+outputs/
+
+# Product Docs
+prd.md
+
+# Streamlit
+.streamlit/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
 
 # MLflow
 mlruns/
+mlflow/
 
 # OS
 .DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
 *.swp
 
+# Logs
+*.log
+logs/
+*.log.*
+
+# Databases
+*.sqlite
+*.db
+*.sqlite-journal
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
 # IDE
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
+
+# Web / JavaScript
+node_modules/
+.npm
+npm-debug.log*
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
